@@ -1,0 +1,44 @@
+@use "../abstracts/" as a;
+
+.cta {
+  background-color: a.$primary-peach;
+  height: 292px;
+  border-radius: 1.5rem;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: url(/assets/shared/desktop/bg-pattern-call-to-action.svg);
+    position: absolute;
+    width: 876px;
+    height: 584px;
+    right: 0px;
+    top: -170px;
+    z-index: 3;
+    // transform: rotate(180deg) scaleX(-1);
+  }
+
+  &__content {
+    width: 92rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__title {
+    width: 26.8rem;
+    margin-bottom: 5px;
+    z-index: 11;
+  }
+
+  &__text {
+    width: 45.9rem;
+    z-index: 12;
+  }
+
+  &--button {
+    z-index: 15;
+  }
+}

@@ -1,0 +1,271 @@
+@use "../abstracts/" as a;
+
+html {
+  font-size: 62.5%;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+
+.nav {
+  &__link {
+    &--item {
+      color: a.$secondary-dark-grey;
+      text-decoration: none;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Component Text
+.button__text {
+  text-decoration: none;
+  color: a.$secondary-dark-grey;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.heading--primary {
+  color: #fff;
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.text--primary--white {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+// HOME PAGE
+
+.box {
+  color: #fff;
+
+  &__heading {
+    font-size: 4rem;
+    line-height: 48px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    span {
+      color: a.$primary-peach;
+      font-size: 2rem;
+      padding-bottom: 3px;
+    }
+  }
+}
+
+// Cards
+
+.service-box {
+  color: #fff;
+
+  &__heading {
+    font-size: 4rem;
+    line-height: 48px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    span {
+      color: a.$primary-peach;
+      font-size: 2rem;
+      padding-bottom: 3px;
+    }
+  }
+}
+
+.quality {
+  &__title {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    line-height: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: a.$secondary-dark-grey;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 400;
+
+    color: a.$secondary-dark-grey;
+  }
+}
+
+.cta {
+  &__title {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #fff;
+  }
+
+  &--button {
+    color: a.$secondary-dark-grey;
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+.footer {
+  &__link {
+    &--item {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__heading {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  &__logo {
+    color: a.$primary-peach;
+    transition: all 0.1s;
+
+    &:hover {
+      color: a.$secondary-light-peach;
+    }
+  }
+}
+
+// CARDS
+.card {
+  &__heading {
+    color: a.$primary-peach;
+    font-size: 2rem;
+    line-height: 26px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 26px;
+    text-align: center;
+  }
+}
+
+// content box
+.about__content {
+  &__heading {
+    font-size: 4rem;
+    line-height: 48px;
+    font-weight: 500;
+    color: a.$primary-peach;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 26px;
+  }
+}
+
+.panel {
+  &__text {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    line-height: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: a.$secondary-dark-grey;
+  }
+
+  &__button {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+}
+
+.map {
+  &__header {
+    font-size: 4rem;
+    line-height: 48px;
+    font-weight: 500;
+    color: a.$primary-peach;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 26px;
+    font-weight: 400;
+  }
+
+  &__heading {
+    font-size: 1.6rem;
+    line-height: 26px;
+    font-weight: 400;
+  }
+}
+
+.form {
+  &__input {
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+
+  &__textarea {
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+
+  opacity: 0.5; /* Firefox */
+}
+
+.button__form {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}

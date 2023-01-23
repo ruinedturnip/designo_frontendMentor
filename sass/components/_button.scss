@@ -1,0 +1,35 @@
+@use "../abstracts/" as a;
+
+.button {
+  display: inline-block;
+  width: 15.2rem;
+  height: 5.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff;
+
+  border-radius: 8px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: a.$secondary-light-peach;
+  color: #fff;
+}
+
+.panel__button {
+  width: 15.2rem;
+  height: 5.6rem;
+  background-color: a.$primary-peach;
+  color: #fff;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

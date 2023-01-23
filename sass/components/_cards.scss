@@ -1,0 +1,99 @@
+@use "../abstracts/" as a;
+
+.card {
+  width: 35rem;
+  height: 47.8rem;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.3s;
+  box-shadow: 0px 3px 30px 1px rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 3px 30px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+  }
+
+  &__imgbox {
+    height: 320px;
+    width: 350px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+
+    &--1 {
+      background-image: url("../../assets/web-design/desktop/image-express.jpg");
+      background-size: cover;
+    }
+    &--2 {
+      background-image: url("../../assets/web-design/desktop/image-transfer.jpg");
+      background-size: cover;
+    }
+    &--3 {
+      background-image: url("../../assets/web-design/desktop/image-photon.jpg");
+      background-size: cover;
+    }
+    &--4 {
+      background-image: url("../../assets/web-design/desktop/image-builder.jpg");
+      background-size: cover;
+    }
+    &--5 {
+      background-image: url("../../assets/web-design/desktop/image-blogr.jpg");
+      background-size: cover;
+    }
+    &--6 {
+      background-image: url("../../assets/web-design/desktop/image-camp.jpg");
+      background-size: cover;
+    }
+    &--7 {
+      background-image: url("../../assets/app-design/desktop/image-airfilter.jpg");
+      background-size: cover;
+    }
+    &--8 {
+      background-image: url("../../assets/app-design/desktop/image-eyecam.jpg");
+      background-size: cover;
+    }
+    &--9 {
+      background-image: url("../../assets/app-design/desktop/image-faceit.jpg");
+      background-size: cover;
+    }
+    &--10 {
+      background-image: url("../../assets/app-design/desktop/image-todo.jpg");
+      background-size: cover;
+    }
+    &--11 {
+      background-image: url("../../assets/app-design/desktop/image-loopstudios.jpg");
+      background-size: cover;
+    }
+    &--12 {
+      background-image: url("../../assets/graphic-design/desktop/image-change.jpg");
+      background-size: cover;
+    }
+    &--13 {
+      background-image: url("../../assets/graphic-design/desktop/image-boxed-water.jpg");
+      background-size: cover;
+    }
+    &--14 {
+      background-image: url("../../assets/graphic-design/desktop/image-science.jpg");
+      background-size: cover;
+    }
+  }
+
+  &__content-box {
+    height: 15.8rem;
+    width: 100%;
+    background-color: a.$tertiary-light-peach;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__text {
+    width: 286px;
+  }
+}

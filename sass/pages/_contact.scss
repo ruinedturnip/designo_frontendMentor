@@ -1,0 +1,16 @@
+@use "../abstracts/" as a;
+
+.index--contact {
+  &::after {
+    content: "";
+    width: 100.6rem;
+    height: 59.4rem;
+    background-color: #f1f3f5;
+    border-radius: 297px 297px 297px 297px;
+    z-index: -10;
+    position: absolute;
+    bottom: -700px;
+    right: 0px;
+    opacity: 50.23%;
+  }
+}

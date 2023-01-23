@@ -1,0 +1,98 @@
+@use "../abstracts/" as a;
+
+.about__content {
+  height: 64rem;
+  width: 111.1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+
+  background-color: a.$tertiary-light-peach;
+  overflow: hidden;
+  position: relative;
+
+  &--2 {
+    flex-direction: row-reverse;
+  }
+
+  &__imgbox {
+    z-index: 5;
+  }
+
+  &__textbox {
+    margin-left: 9.4rem;
+    display: flex;
+    flex-direction: column;
+    width: 44.5rem;
+
+    &--2 {
+      margin-left: 0;
+      margin-right: 9.4rem;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 2.4rem;
+  }
+
+  &__text {
+    margin-bottom: 2.4rem;
+  }
+
+  &__circle {
+    position: absolute;
+    opacity: 0.06;
+
+    width: 292px;
+    height: 292px;
+
+    z-index: 0;
+    border-radius: 50%;
+    &--1 {
+      background: linear-gradient(
+        -90deg,
+        rgba(93, 2, 2, 0.0001) 0%,
+        rgba(93, 2, 2, 0.497569) 100%
+      );
+      right: 494px;
+      bottom: 292px;
+    }
+    &--2 {
+      background: linear-gradient(
+        90deg,
+        rgba(93, 2, 2, 0.0001) 0%,
+        rgba(93, 2, 2, 0.497569) 100%
+      );
+      right: 494px;
+      bottom: 0px;
+    }
+    &--3 {
+      background: linear-gradient(
+        180deg,
+        rgba(93, 2, 2, 0.0001) 0%,
+        rgba(93, 2, 2, 0.497569) 100%
+      );
+      right: 202px;
+      bottom: 0px;
+    }
+
+    &--5 {
+      background: linear-gradient(
+        90deg,
+        rgba(93, 2, 2, 0.0001) 0%,
+        rgba(93, 2, 2, 0.497569) 100%
+      );
+      left: 0;
+      bottom: 0px;
+    }
+    &--6 {
+      background: linear-gradient(
+        180deg,
+        rgba(93, 2, 2, 0.0001) 0%,
+        rgba(93, 2, 2, 0.497569) 100%
+      );
+      left: 292px;
+      bottom: 0px;
+    }
+  }
+}

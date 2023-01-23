@@ -1,0 +1,44 @@
+@use "../abstracts/" as a;
+
+.header {
+  background-color: a.$primary-peach;
+  height: 25.2rem;
+  border-radius: 15px;
+
+  position: relative;
+  overflow: hidden;
+  margin-top: 6.7rem;
+
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--web-design {
+    &::after {
+      content: url("../../assets/web-design/desktop/bg-pattern-intro-web.svg");
+      height: 87.6rem;
+      width: 100%;
+      position: absolute;
+
+      top: -175px;
+      right: -230px;
+    }
+  }
+
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+
+    &__title {
+      margin-bottom: 2.4rem;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+}

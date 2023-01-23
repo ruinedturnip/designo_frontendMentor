@@ -1,0 +1,33 @@
+@use "../abstracts/" as a;
+
+.index--about {
+  &::before {
+    content: "";
+    width: 100.6rem;
+    height: 59.4rem;
+    background-color: #f1f3f5;
+    border-radius: 297px 297px 297px 0;
+    z-index: -3;
+    position: absolute;
+    top: 475px;
+    left: 0;
+    opacity: 50.23%;
+  }
+  &::after {
+    content: "";
+    width: 100.6rem;
+    height: 59.4rem;
+    background-color: #f1f3f5;
+    border-radius: 297px 297px 297px 297px;
+    z-index: -10;
+    position: absolute;
+    top: 215%;
+    right: -400px;
+    opacity: 50.23%;
+  }
+}
+
+.about__content {
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+}
