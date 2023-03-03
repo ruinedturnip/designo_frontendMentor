@@ -6,6 +6,10 @@
 
   margin-top: -7.2rem;
 
+  @include a.respond(tab-land) {
+    height: 423px;
+  }
+
   &__link--item {
     transition: all 0.1s;
     &:hover {
@@ -43,13 +47,25 @@
     color: rgba(255, 255, 255, 0.5);
     width: 1111px;
 
+    @include a.respond(tab-land) {
+      width: 690px;
+    }
+
     &__content--1 {
       width: 350px;
       margin-right: 3rem;
+
+      @include a.respond(tab-land) {
+        width: 223px;
+        margin-right: 1rem;
+      }
     }
 
     &__content--2 {
       width: 350px;
+      @include a.respond(tab-land) {
+        width: 223px;
+      }
     }
 
     &__content--3 {
@@ -57,6 +73,10 @@
       margin-left: 19.7rem;
       align-self: flex-end;
       gap: 1.6rem;
+
+      @include a.respond(tab-land) {
+        margin-left: 2rem;
+      }
     }
   }
 

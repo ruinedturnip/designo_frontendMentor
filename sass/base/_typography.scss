@@ -109,6 +109,10 @@ html {
     font-weight: 400;
 
     color: a.$secondary-dark-grey;
+
+    @include a.respond(tab-land) {
+      text-align: left;
+    }
   }
 }
 

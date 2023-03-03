@@ -5,6 +5,12 @@
   display: flex;
   gap: 30px;
   align-items: center;
+
+  @include a.respond(tab-land) {
+    flex-direction: column;
+
+    margin-top: 12rem;
+  }
 }
 
 .index--main {
@@ -19,6 +25,10 @@
     top: 475px;
     left: 0;
     opacity: 50.23%;
+
+    @include a.respond(tab-land) {
+      display: none;
+    }
   }
   &::after {
     content: "";
@@ -31,9 +41,17 @@
     top: 230%;
     right: 0;
     opacity: 50.23%;
+
+    @include a.respond(tab-land) {
+      display: none;
+    }
   }
 }
 
 .section__cta {
   margin-top: 16rem;
+
+  @include a.respond(tab-land) {
+    margin-top: 6.7rem;
+  }
 }
