@@ -116,6 +116,8 @@
       height: 10.2rem;
       padding-top: 20px;
       margin-top: 25px;
+
+      z-index: 10;
     }
 
     &:focus {
@@ -128,6 +130,7 @@
 .button__form {
   align-self: flex-end;
   margin-top: 2.4rem;
+  z-index: 10;
 
   @include a.respond(phone) {
     align-self: center;

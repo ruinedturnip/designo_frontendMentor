@@ -1452,6 +1452,7 @@ html {
   height: 10.2rem;
   padding-top: 20px;
   margin-top: 25px;
+  z-index: 10;
 }
 .form__input:focus {
   border-bottom: 3px solid #fff;
@@ -1461,6 +1462,7 @@ html {
 .button__form {
   align-self: flex-end;
   margin-top: 2.4rem;
+  z-index: 10;
 }
 @media only screen and (max-width: 37.5em) {
   .button__form {
