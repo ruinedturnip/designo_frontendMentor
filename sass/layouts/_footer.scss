@@ -9,6 +9,9 @@
   @include a.respond(tab-land) {
     height: 423px;
   }
+  @include a.respond(tab-land) {
+    height: 815px;
+  }
 
   &__link--item {
     transition: all 0.1s;
@@ -33,10 +36,20 @@
       display: flex;
       list-style: none;
       gap: 4.2rem;
+
+      @include a.respond(phone) {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 32px;
+      }
     }
 
     &--contact {
       padding-top: 7.2rem;
+    }
+
+    @include a.respond(phone) {
+      flex-direction: column;
     }
   }
 
@@ -49,6 +62,13 @@
 
     @include a.respond(tab-land) {
       width: 690px;
+    }
+
+    @include a.respond(phone) {
+      flex-direction: column;
+      width: 375px;
+      text-align: center;
+      gap: 40px;
     }
 
     &__content--1 {
@@ -76,6 +96,11 @@
 
       @include a.respond(tab-land) {
         margin-left: 2rem;
+      }
+
+      @include a.respond(phone) {
+        margin-left: 0;
+        align-self: center;
       }
     }
   }

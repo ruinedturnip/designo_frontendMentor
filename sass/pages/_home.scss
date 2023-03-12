@@ -8,8 +8,11 @@
 
   @include a.respond(tab-land) {
     flex-direction: column;
-
     margin-top: 12rem;
+  }
+
+  @include a.respond(phone) {
+    gap: 80px;
   }
 }
 

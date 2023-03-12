@@ -12,11 +12,22 @@
     gap: 32px;
   }
 
+  @include a.respond(phone) {
+    flex-direction: column;
+    width: 327px;
+    gap: 48px;
+  }
+
   &__content {
     text-align: center;
     @include a.respond(tab-land) {
       margin-left: 4.8rem;
       text-align: left;
+    }
+
+    @include a.respond(phone) {
+      text-align: center;
+      margin-left: 0;
     }
   }
 

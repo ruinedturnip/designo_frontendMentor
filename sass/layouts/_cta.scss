@@ -12,6 +12,10 @@
     height: 350px;
   }
 
+  @include a.respond(phone) {
+    height: 379px;
+  }
+
   &::after {
     content: url(/assets/shared/desktop/bg-pattern-call-to-action.svg);
     position: absolute;
@@ -42,6 +46,10 @@
       text-align: center;
     }
 
+    @include a.respond(phone) {
+      width: 279px;
+    }
+
     &--left {
       @include a.respond(tab-land) {
         display: flex;
@@ -62,6 +70,10 @@
   &__text {
     width: 45.9rem;
     z-index: 12;
+
+    @include a.respond(phone) {
+      width: 279px;
+    }
   }
 
   &--button {

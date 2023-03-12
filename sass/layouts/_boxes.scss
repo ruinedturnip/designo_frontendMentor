@@ -18,6 +18,10 @@
     height: 64.9rem;
     row-gap: 2.5rem;
   }
+
+  @include a.respond(phone) {
+    justify-items: center;
+  }
 }
 
 .box {
@@ -32,6 +36,10 @@
   text-decoration: none;
   cursor: pointer;
   border: none;
+
+  @include a.respond(phone) {
+    width: 327px;
+  }
 
   &__text {
     display: flex;
@@ -56,11 +64,44 @@
           rgb(231, 129, 107, 0.5)
         ),
         url("../../assets/home/desktop/image-web-design-large.jpg");
+      @include a.respond(tab-land) {
+        background-image: linear-gradient(
+            to right,
+            rgb(231, 129, 107, 0.5),
+            rgb(231, 129, 107, 0.5)
+          ),
+          url("../../assets/home/tablet/image-web-design.jpg");
+      }
+
+      @include a.respond(phone) {
+        background-image: linear-gradient(
+            to right,
+            rgb(231, 129, 107, 0.5),
+            rgb(231, 129, 107, 0.5)
+          ),
+          url("../../assets/home/mobile/image-web-design.jpg");
+      }
     }
 
     @include a.respond(tab-land) {
       grid-column: 1/2;
       grid-row: 1/2;
+
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url("../../assets/home/tablet/image-web-design.jpg");
+    }
+
+    @include a.respond(phone) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url("../../assets/home/mobile/image-web-design.jpg");
     }
   }
 
@@ -81,11 +122,43 @@
           rgb(231, 129, 107, 0.5)
         ),
         url("../../assets/home/desktop/image-app-design.jpg");
+      @include a.respond(tab-land) {
+        background-image: linear-gradient(
+            to right,
+            rgb(231, 129, 107, 0.5),
+            rgb(231, 129, 107, 0.5)
+          ),
+          url("../../assets/home/tablet/image-app-design.jpg");
+      }
+
+      @include a.respond(phone) {
+        background-image: linear-gradient(
+            to right,
+            rgb(231, 129, 107, 0.5),
+            rgb(231, 129, 107, 0.5)
+          ),
+          url("../../assets/home/mobile/image-app-design.jpg");
+      }
     }
 
     @include a.respond(tab-land) {
       grid-column: 1/2;
       grid-row: 2/3;
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url("../../assets/home/tablet/image-app-design.jpg");
+    }
+
+    @include a.respond(phone) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url("../../assets/home/mobile/image-app-design.jpg");
     }
   }
   &--3 {
@@ -105,11 +178,43 @@
           rgb(231, 129, 107, 0.5)
         ),
         url("../../assets/home/desktop/image-graphic-design.jpg");
+      @include a.respond(tab-land) {
+        background-image: linear-gradient(
+            to right,
+            rgb(231, 129, 107, 0.5),
+            rgb(231, 129, 107, 0.5)
+          ),
+          url("../../assets/home/tablet/image-graphic-design.jpg");
+      }
+
+      @include a.respond(phone) {
+        background-image: linear-gradient(
+            to right,
+            rgb(231, 129, 107, 0.5),
+            rgb(231, 129, 107, 0.5)
+          ),
+          url("../../assets/home/mobile/image-graphic-design.jpg");
+      }
     }
 
     @include a.respond(tab-land) {
       grid-column: 1/2;
       grid-row: 3/4;
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url("../../assets/home/tablet/image-graphic-design.jpg");
+    }
+
+    @include a.respond(phone) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url("../../assets/home/mobile/image-graphic-design.jpg");
     }
   }
 }

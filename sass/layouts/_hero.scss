@@ -14,6 +14,12 @@
     height: 84.3rem;
   }
 
+  @include a.respond(tab-land) {
+    width: 100vw;
+    border-radius: 0;
+    margin-top: 37px;
+  }
+
   &::after {
     content: url("../../assets/home/desktop/bg-pattern-hero-home.svg");
     height: 64rem;
@@ -27,6 +33,11 @@
       right: -145px;
       top: 110px;
     }
+
+    @include a.respond(tab-land) {
+      left: 0;
+      top: 82px;
+    }
   }
 
   &__container {
@@ -38,6 +49,10 @@
       flex-direction: column;
       width: 681px;
       align-items: center;
+    }
+
+    @include a.respond(tab-land) {
+      width: 375px;
     }
   }
 
@@ -59,6 +74,11 @@
       @include a.respond(tab-land) {
         margin-bottom: 8px;
       }
+
+      @include a.respond(tab-land) {
+        width: 327px;
+        margin-bottom: 1.4rem;
+      }
     }
 
     &__text {
@@ -67,6 +87,11 @@
 
       @include a.respond(tab-land) {
         margin-bottom: 1.9rem;
+      }
+
+      @include a.respond(tab-land) {
+        width: 327px;
+        margin-bottom: 2.4rem;
       }
     }
   }
@@ -79,6 +104,10 @@
     @include a.respond(tab-land) {
       right: 2rem;
       bottom: -36rem;
+    }
+    @include a.respond(phone) {
+      right: -11rem;
+      bottom: -38rem;
     }
   }
 }

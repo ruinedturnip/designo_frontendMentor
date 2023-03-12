@@ -7,4 +7,8 @@
   @include a.respond(tab-land) {
     width: 681px;
   }
+
+  @include a.respond(phone) {
+    width: 375px;
+  }
 }

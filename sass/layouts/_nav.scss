@@ -29,3 +29,65 @@
     }
   }
 }
+
+.mobile {
+  &__navBars {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 2px;
+  }
+
+  &__navBar {
+    width: 24px;
+    height: 4px;
+    background-color: a.$secondary-dark-grey;
+  }
+
+  &__nav {
+    position: relative;
+
+    &__link {
+      list-style: none;
+    }
+
+    &--overlay {
+      height: 235px;
+      width: 100vw;
+      position: absolute;
+      background-color: a.$primary-black;
+      color: #fff;
+      right: 0;
+      top: 75px;
+      z-index: 10;
+
+      &__links {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        gap: 32px;
+        justify-content: center;
+        align-items: left;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.change .navBar--1 {
+  transform: rotate(-45deg) translate(-7px, 9px);
+}
+
+/* Fade out the second bar */
+.change .navBar--2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .navBar--3 {
+  transform: rotate(45deg) translate(-3px, -4px);
+}
+
+.hide {
+  display: none;
+}
