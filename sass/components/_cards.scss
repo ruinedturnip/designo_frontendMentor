@@ -38,6 +38,7 @@
 
     @include a.respond(phone) {
       width: 327px;
+      height: 320px;
     }
   }
 
@@ -116,6 +117,11 @@
     @include a.respond(tab-land) {
       height: 310px;
       width: 350px;
+    }
+
+    @include a.respond(phone) {
+      width: 100%;
+      height: 158px;
     }
   }
 
