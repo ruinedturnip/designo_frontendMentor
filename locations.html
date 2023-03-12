@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="script.js"></script>
     <title>Frontend Mentor | Designo Agency Website Challenge</title>
   </head>
   <body>
@@ -36,7 +37,8 @@ NAV
             />
           </a>
         </div>
-        <div class="nav__box--right">
+      
+        <div class="nav__box--right" id="desktopNav">
           <li class="nav__link">
             <a href="about.html" class="nav__link--item">Our Company</a>
           </li>
@@ -46,6 +48,28 @@ NAV
           <li class="nav__link">
             <a href="contact.html" class="nav__link--item">Contact</a>
           </li>
+        </div>
+      
+        <div class="mobile__nav hide" id="mobileNav">
+          <div class="mobile__navBars hide" id="menu-bar">
+            <div class="mobile__navBar navBar--1 "></div>
+            <div class="mobile__navBar navBar--2 "></div>
+            <div class="mobile__navBar navBar--3 "></div>
+          </div>
+         </div>
+         <div class="mobile__nav--overlay hide" id="overlay">
+      
+          <div class="mobile__nav--overlay__links">
+            <li class="mobile__nav__link" id="nav-1">
+              <a href="about.html" class="mobile__nav__link--item">Our Company</a>
+            </li>
+            <li class="mobile__nav__link" id="nav-2">
+              <a href="locations.html" class="mobile__nav__link--item">Locations</a>
+            </li>
+            <li class="mobile__nav__link" id="nav-3">
+              <a href="contact.html" class="mobile__nav__link--item">Contact</a>
+            </li>
+          </div>
         </div>
       </nav>
    <!-- --------------------------
@@ -65,7 +89,7 @@ MAPS
             <p class="map__text">3886 Wellington Street</p>
             <p class="map__text">Toronto, Ontario M9C 3J5</p>
           </div>
-          <div class="map__textbox-2">
+          <div class="map__textbox--2">
             <p class="map__heading"><strong>Contact Us</strong></p>
             <p class="map__text">P : +1
               253-863-8967</p>
@@ -90,7 +114,7 @@ MAPS
     <p class="map__text">19 Balonne Street</p>
     <p class="map__text">New South Wales 2443</p>
   </div>
-  <div class="map__textbox-2">
+  <div class="map__textbox--2">
     <p class="map__heading"><strong>Contact Us</strong></p>
     <p class="map__text">P : (02) 6720 9092</p>
     <p class="map__text">M : contact@designo.co</p>
@@ -113,7 +137,7 @@ MAPS
             <p class="map__text">13 Colorado Way</p>
             <p class="map__text">Rhyd-y-fro SA8 9GA</p>
           </div>
-          <div class="map__textbox-2">
+          <div class="map__textbox--2">
             <p class="map__heading"><strong>Contact Us</strong></p>
             <p class="map__text">P : 078 3115
               1400</p>

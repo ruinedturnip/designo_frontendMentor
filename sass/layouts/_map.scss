@@ -14,8 +14,28 @@
   height: 326px;
   gap: 3rem;
 
+  @include a.respond(tab-land) {
+    flex-direction: column;
+    width: 689px;
+    height: 683px;
+  }
+
+  @include a.respond(phone) {
+    width: 375px;
+    height: 714px;
+    gap: 0;
+  }
+
   &--2 {
     flex-direction: row-reverse;
+  }
+
+  &--1,
+  &--2,
+  &--3 {
+    @include a.respond(tab-land) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__textbox {
@@ -28,6 +48,17 @@
     justify-content: center;
 
     position: relative;
+
+    @include a.respond(tab-land) {
+      width: 689px;
+      height: 326px;
+    }
+
+    @include a.respond(phone) {
+      width: 375px;
+      height: 394px;
+      border-radius: 0;
+    }
 
     &::before {
       content: "";
@@ -44,6 +75,10 @@
       bottom: 0;
       left: 0;
       opacity: 0.05;
+
+      @include a.respond(phone) {
+        content: url("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+      }
     }
 
     &::after {
@@ -61,21 +96,48 @@
       bottom: 0;
       left: 292px;
       opacity: 0.05;
+
+      @include a.respond(phone) {
+        display: none;
+      }
     }
   }
 
   &__text-content {
     width: 54rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   &__content_row {
     display: flex;
+    @include a.respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 327px;
+      gap: 24px;
+    }
   }
 
   &__textbox--1 {
     width: 255px;
     margin-right: 3rem;
     position: relative;
+
+    @include a.respond(phone) {
+      width: 327px;
+      margin-right: 0;
+      text-align: center;
+    }
+  }
+
+  &__textbox--2 {
+    @include a.respond(phone) {
+      text-align: center;
+    }
   }
 
   &__header {
@@ -87,14 +149,34 @@
     height: 326px;
     border-radius: 15px;
     background-size: cover;
+
+    @include a.respond(tab-land) {
+      width: 689px;
+    }
+
+    @include a.respond(phone) {
+      width: 375px;
+      height: 320px;
+      border-radius: 0;
+    }
     &--1 {
       background-image: url("../../assets/locations/desktop/image-map-canada.png");
+
+      @include a.respond(tab-land) {
+        background-image: url("../../assets/locations/tablet/image-map-canada.png");
+      }
     }
     &--2 {
       background-image: url("../../assets/locations/desktop/image-map-australia.png");
+      @include a.respond(tab-land) {
+        background-image: url("../../assets/locations/tablet/image-map-australia.png");
+      }
     }
     &--3 {
       background-image: url("../../assets/locations/desktop/image-map-united-kingdom.png");
+      @include a.respond(tab-land) {
+        background-image: url("../../assets/locations/tablet/image-map-uk.png");
+      }
     }
   }
 }

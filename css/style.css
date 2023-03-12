@@ -1164,8 +1164,27 @@ html {
   height: 326px;
   gap: 3rem;
 }
+@media only screen and (max-width: 75em) {
+  .map {
+    flex-direction: column;
+    width: 689px;
+    height: 683px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .map {
+    width: 375px;
+    height: 714px;
+    gap: 0;
+  }
+}
 .map--2 {
   flex-direction: row-reverse;
+}
+@media only screen and (max-width: 75em) {
+  .map--1, .map--2, .map--3 {
+    flex-direction: column-reverse;
+  }
 }
 .map__textbox {
   width: 73rem;
@@ -1176,6 +1195,19 @@ html {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+@media only screen and (max-width: 75em) {
+  .map__textbox {
+    width: 689px;
+    height: 326px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .map__textbox {
+    width: 375px;
+    height: 394px;
+    border-radius: 0;
+  }
 }
 .map__textbox::before {
   content: "";
@@ -1188,6 +1220,11 @@ html {
   left: 0;
   opacity: 0.05;
 }
+@media only screen and (max-width: 37.5em) {
+  .map__textbox::before {
+    content: url("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+  }
+}
 .map__textbox::after {
   content: "";
   position: absolute;
@@ -1199,16 +1236,46 @@ html {
   left: 292px;
   opacity: 0.05;
 }
+@media only screen and (max-width: 37.5em) {
+  .map__textbox::after {
+    display: none;
+  }
+}
 .map__text-content {
   width: 54rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .map__content_row {
   display: flex;
+}
+@media only screen and (max-width: 37.5em) {
+  .map__content_row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 327px;
+    gap: 24px;
+  }
 }
 .map__textbox--1 {
   width: 255px;
   margin-right: 3rem;
   position: relative;
+}
+@media only screen and (max-width: 37.5em) {
+  .map__textbox--1 {
+    width: 327px;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .map__textbox--2 {
+    text-align: center;
+  }
 }
 .map__header {
   margin-bottom: 2.4rem;
@@ -1219,14 +1286,41 @@ html {
   border-radius: 15px;
   background-size: cover;
 }
+@media only screen and (max-width: 75em) {
+  .map__imgbox {
+    width: 689px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .map__imgbox {
+    width: 375px;
+    height: 320px;
+    border-radius: 0;
+  }
+}
 .map__imgbox--1 {
   background-image: url("../../assets/locations/desktop/image-map-canada.png");
+}
+@media only screen and (max-width: 75em) {
+  .map__imgbox--1 {
+    background-image: url("../../assets/locations/tablet/image-map-canada.png");
+  }
 }
 .map__imgbox--2 {
   background-image: url("../../assets/locations/desktop/image-map-australia.png");
 }
+@media only screen and (max-width: 75em) {
+  .map__imgbox--2 {
+    background-image: url("../../assets/locations/tablet/image-map-australia.png");
+  }
+}
 .map__imgbox--3 {
   background-image: url("../../assets/locations/desktop/image-map-united-kingdom.png");
+}
+@media only screen and (max-width: 75em) {
+  .map__imgbox--3 {
+    background-image: url("../../assets/locations/tablet/image-map-uk.png");
+  }
 }
 
 .form-box {
