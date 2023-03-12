@@ -318,3 +318,9 @@ html {
   font-size: 1.5rem;
   letter-spacing: 1px;
 }
+
+.contact__text {
+  @include a.respond(tab-land) {
+    font-size: 1.6rem;
+  }
+}

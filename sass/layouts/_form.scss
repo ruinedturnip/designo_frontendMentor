@@ -14,6 +14,19 @@
 
   overflow: hidden;
   position: relative;
+
+  @include a.respond(tab-land) {
+    flex-direction: column;
+    width: 689px;
+    height: 711px;
+    justify-content: none;
+  }
+
+  @include a.respond(phone) {
+    width: 375px;
+    height: 764px;
+  }
+
   &::before {
     content: url("../../assets/contact/desktop/bg-pattern-hero-desktop.svg");
     height: 640px;
@@ -30,6 +43,23 @@
     flex-direction: column;
     justify-content: center;
     width: 44.5rem;
+
+    @include a.respond(tab-land) {
+      width: 573px;
+      margin-top: 78px;
+      justify-self: start;
+    }
+
+    @include a.respond(phone) {
+      width: 327px;
+      text-align: center;
+    }
+  }
+
+  &__right {
+    @include a.respond(tab-land) {
+      margin-bottom: 70px;
+    }
   }
 
   &__header {
@@ -41,6 +71,15 @@
     flex-direction: column;
     width: 380px;
     height: 371px;
+
+    @include a.respond(tab-land) {
+      width: 573px;
+    }
+
+    @include a.respond(phone) {
+      width: 327px;
+      align-items: center;
+    }
   }
 }
 
@@ -65,6 +104,14 @@
     padding: 16px;
     transition: all 0.3s;
 
+    @include a.respond(tab-land) {
+      width: 573px;
+    }
+
+    @include a.respond(phone) {
+      width: 327px;
+    }
+
     &--textarea {
       height: 10.2rem;
       padding-top: 20px;
@@ -81,4 +128,8 @@
 .button__form {
   align-self: flex-end;
   margin-top: 2.4rem;
+
+  @include a.respond(phone) {
+    align-self: center;
+  }
 }
