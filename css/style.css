@@ -1222,7 +1222,7 @@ html {
 }
 @media only screen and (max-width: 37.5em) {
   .map__textbox::before {
-    content: url("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+    display: none;
   }
 }
 .map__textbox::after {

@@ -77,7 +77,10 @@
       opacity: 0.05;
 
       @include a.respond(phone) {
-        content: url("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+        display: none;
+        // content: url("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+        // bottom: 0;
+        // left: 0;
       }
     }
 
@@ -99,6 +102,9 @@
 
       @include a.respond(phone) {
         display: none;
+        // content: url("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+        // bottom: 0;
+        // left: 0;
       }
     }
   }
