@@ -8,6 +8,7 @@ html {
   font-size: 62.5%;
   max-width: 100%;
   overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 html {
@@ -101,6 +102,14 @@ html {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 500;
+}
+@media only screen and (max-width: 37.5em) {
+  .service-box__heading {
+    font-size: 2.8rem;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+    font-weight: 400;
+  }
 }
 .service-box__text {
   font-size: 1.5rem;
@@ -1329,6 +1338,20 @@ html {
   box-shadow: 0px 3px 30px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+@media only screen and (max-width: 75em) {
+  .card {
+    display: flex;
+    width: 100%;
+    height: 310px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .card {
+    flex-direction: column;
+    width: 327px;
+    height: 47.8rem;
+  }
+}
 .card:hover {
   box-shadow: 0px 3px 30px 10px rgba(0, 0, 0, 0.1);
   transform: translateY(-3px);
@@ -1336,6 +1359,16 @@ html {
 .card__imgbox {
   height: 320px;
   width: 350px;
+}
+@media only screen and (max-width: 75em) {
+  .card__imgbox {
+    width: 339px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .card__imgbox {
+    width: 327px;
+  }
 }
 .card__img {
   width: 100%;
@@ -1407,6 +1440,12 @@ html {
   flex-direction: column;
   gap: 1.6rem;
 }
+@media only screen and (max-width: 75em) {
+  .card__content-box {
+    height: 310px;
+    width: 350px;
+  }
+}
 .card__text {
   width: 286px;
 }
@@ -1417,6 +1456,14 @@ html {
   grid-template-rows: auto;
   column-gap: 3rem;
   margin-top: 16rem;
+}
+@media only screen and (max-width: 75em) {
+  .service {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+    margin-top: 12rem;
+  }
 }
 .service-box {
   border-radius: 15px;
@@ -1433,6 +1480,12 @@ html {
   height: 308px;
   width: 541px;
 }
+@media only screen and (max-width: 75em) {
+  .service-box {
+    width: 100%;
+    height: 200px;
+  }
+}
 .service-box__text {
   display: flex;
   align-items: center;
@@ -1446,6 +1499,12 @@ html {
 .service-box--1:hover {
   background-image: linear-gradient(to right, rgba(231, 129, 107, 0.5), rgba(231, 129, 107, 0.5)), url("../../assets/home/desktop/image-web-design-large.jpg");
 }
+@media only screen and (max-width: 75em) {
+  .service-box--1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
 .service-box--2 {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -1453,6 +1512,12 @@ html {
 }
 .service-box--2:hover {
   background-image: linear-gradient(to right, rgba(231, 129, 107, 0.5), rgba(231, 129, 107, 0.5)), url("../../assets/home/desktop/image-web-design-large.jpg");
+}
+@media only screen and (max-width: 75em) {
+  .service-box--2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 }
 .service-box--3 {
   grid-column: 1/2;
@@ -1470,6 +1535,12 @@ html {
 .service-box--4:hover {
   background-image: linear-gradient(to right, rgba(231, 129, 107, 0.5), rgba(231, 129, 107, 0.5)), url("../../assets/home/desktop/image-app-design.jpg");
 }
+@media only screen and (max-width: 75em) {
+  .service-box--4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
 
 .header {
   background-color: #e7816b;
@@ -1483,6 +1554,12 @@ html {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 37.5em) {
+  .header {
+    height: 320px;
+    width: 375px;
+  }
+}
 .header--web-design::after {
   content: url("../../assets/web-design/desktop/bg-pattern-intro-web.svg");
   height: 87.6rem;
@@ -1490,6 +1567,15 @@ html {
   position: absolute;
   top: -175px;
   right: -230px;
+}
+@media only screen and (max-width: 37.5em) {
+  .header--web-design::after {
+    content: url("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+    height: 292px;
+    width: 292px;
+    top: 0px;
+    right: 292px;
+  }
 }
 .header__textbox {
   display: flex;
@@ -1573,6 +1659,18 @@ html {
   flex-wrap: wrap;
   gap: 3rem;
 }
+@media only screen and (max-width: 75em) {
+  .section__cards {
+    margin-top: 12rem;
+    gap: 3.2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .section__cards {
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .index--webdesign::before {
   content: "";
@@ -1585,6 +1683,11 @@ html {
   top: 230px;
   left: 0;
   opacity: 50.23%;
+}
+@media only screen and (max-width: 75em) {
+  .index--webdesign::before {
+    display: none;
+  }
 }
 
 .index--about::before {

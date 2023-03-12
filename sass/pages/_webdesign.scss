@@ -5,6 +5,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
+
+  @include a.respond(tab-land) {
+    margin-top: 12rem;
+    gap: 3.2rem;
+  }
+
+  @include a.respond(phone) {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .index--webdesign {
@@ -19,5 +29,9 @@
     top: 230px;
     left: 0;
     opacity: 50.23%;
+
+    @include a.respond(tab-land) {
+      display: none;
+    }
   }
 }

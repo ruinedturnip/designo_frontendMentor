@@ -14,6 +14,11 @@
   align-items: center;
   justify-content: center;
 
+  @include a.respond(phone) {
+    height: 320px;
+    width: 375px;
+  }
+
   &--web-design {
     &::after {
       content: url("../../assets/web-design/desktop/bg-pattern-intro-web.svg");
@@ -23,6 +28,14 @@
 
       top: -175px;
       right: -230px;
+
+      @include a.respond(phone) {
+        content: url("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+        height: 292px;
+        width: 292px;
+        top: 0px;
+        right: 292px;
+      }
     }
   }
 
@@ -32,6 +45,10 @@
     align-items: center;
     justify-content: center;
     z-index: 3;
+
+    @include a.respond(phone) {
+      // width: 357px;
+    }
 
     &__title {
       margin-bottom: 2.4rem;

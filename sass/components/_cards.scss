@@ -10,6 +10,19 @@
 
   cursor: pointer;
 
+  @include a.respond(tab-land) {
+    display: flex;
+
+    width: 100%;
+    height: 310px;
+  }
+
+  @include a.respond(phone) {
+    flex-direction: column;
+    width: 327px;
+    height: 47.8rem;
+  }
+
   &:hover {
     box-shadow: 0px 3px 30px 10px rgba(0, 0, 0, 0.1);
     transform: translateY(-3px);
@@ -18,6 +31,14 @@
   &__imgbox {
     height: 320px;
     width: 350px;
+
+    @include a.respond(tab-land) {
+      width: 339px;
+    }
+
+    @include a.respond(phone) {
+      width: 327px;
+    }
   }
 
   &__img {
@@ -91,6 +112,11 @@
     justify-content: center;
     flex-direction: column;
     gap: 1.6rem;
+
+    @include a.respond(tab-land) {
+      height: 310px;
+      width: 350px;
+    }
   }
 
   &__text {
