@@ -494,6 +494,18 @@ html {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 75em) {
+  .about__hero {
+    flex-direction: column-reverse;
+    height: 632px;
+    align-items: space-between;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .about__hero {
+    width: 375px;
+  }
+}
 .about__hero::after {
   content: url("../../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
   height: 64rem;
@@ -502,6 +514,20 @@ html {
   bottom: 0;
   left: 0;
 }
+@media only screen and (max-width: 75em) {
+  .about__hero::after {
+    bottom: 110px;
+    left: -130px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .about__hero::after {
+    content: url("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+    height: 292px;
+    width: 292px;
+    bottom: 195px;
+  }
+}
 .about__hero__textbox {
   width: 63.5rem;
   display: flex;
@@ -509,16 +535,48 @@ html {
   justify-content: center;
   margin-left: 95px;
 }
+@media only screen and (max-width: 75em) {
+  .about__hero__textbox {
+    width: 573px;
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
+    height: 312px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .about__hero__textbox {
+    width: 327px;
+    height: 395px;
+  }
+}
 .about__hero__heading {
   margin-bottom: 3.2rem;
 }
 .about__hero__text {
   width: 45.8rem;
 }
+@media only screen and (max-width: 75em) {
+  .about__hero__text {
+    width: 573px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .about__hero__text {
+    width: 327px;
+  }
+}
 .about__hero__imgbox {
   width: 476px;
   height: 480px;
   z-index: 3;
+}
+@media only screen and (max-width: 75em) {
+  .about__hero__imgbox {
+    width: 100%;
+    height: 320px;
+    align-self: flex-start;
+  }
 }
 
 .boxes {
@@ -810,7 +868,7 @@ html {
     height: 423px;
   }
 }
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 37.5em) {
   .footer {
     height: 815px;
   }
@@ -921,11 +979,34 @@ html {
   overflow: hidden;
   position: relative;
 }
+@media only screen and (max-width: 75em) {
+  .about__content {
+    flex-direction: column;
+    width: 689px;
+    height: 736px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .about__content {
+    width: 375px;
+    height: 865px;
+  }
+}
 .about__content--2 {
   flex-direction: row-reverse;
 }
+@media only screen and (max-width: 75em) {
+  .about__content--2 {
+    flex-direction: column;
+  }
+}
 .about__content__imgbox {
   z-index: 5;
+}
+@media only screen and (max-width: 75em) {
+  .about__content__imgbox {
+    height: 320px;
+  }
 }
 .about__content__textbox {
   margin-left: 9.4rem;
@@ -933,9 +1014,29 @@ html {
   flex-direction: column;
   width: 44.5rem;
 }
+@media only screen and (max-width: 75em) {
+  .about__content__textbox {
+    width: 572px;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 68px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .about__content__textbox {
+    width: 327px;
+  }
+}
 .about__content__textbox--2 {
   margin-left: 0;
   margin-right: 9.4rem;
+}
+@media only screen and (max-width: 75em) {
+  .about__content__textbox--2 {
+    margin-right: 0;
+    text-align: center;
+    margin-top: 68px;
+  }
 }
 .about__content__heading {
   margin-bottom: 2.4rem;
@@ -981,6 +1082,13 @@ html {
   display: flex;
   gap: 3rem;
 }
+@media only screen and (max-width: 75em) {
+  .panel {
+    flex-direction: column;
+    align-items: center;
+    gap: 5.8rem;
+  }
+}
 .panel__box {
   width: 35rem;
   display: flex;
@@ -990,6 +1098,11 @@ html {
 .panel__img {
   position: relative;
   margin-bottom: 4.8rem;
+}
+@media only screen and (max-width: 75em) {
+  .panel__img {
+    margin-bottom: 20px;
+  }
 }
 .panel__img--1::after {
   opacity: 0.2;
@@ -1486,6 +1599,11 @@ html {
   left: 0;
   opacity: 50.23%;
 }
+@media only screen and (max-width: 75em) {
+  .index--about::before {
+    display: none;
+  }
+}
 .index--about::after {
   content: "";
   width: 100.6rem;
@@ -1498,10 +1616,21 @@ html {
   right: -400px;
   opacity: 50.23%;
 }
+@media only screen and (max-width: 75em) {
+  .index--about::after {
+    display: none;
+  }
+}
 
 .about__content {
   margin-top: 16rem;
   margin-bottom: 16rem;
+}
+@media only screen and (max-width: 75em) {
+  .about__content {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+  }
 }
 
 .index--contact::after {

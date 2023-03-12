@@ -9,7 +9,7 @@
   @include a.respond(tab-land) {
     height: 423px;
   }
-  @include a.respond(tab-land) {
+  @include a.respond(phone) {
     height: 815px;
   }
 

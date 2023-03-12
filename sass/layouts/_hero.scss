@@ -125,6 +125,16 @@
   display: flex;
   align-items: center;
 
+  @include a.respond(tab-land) {
+    flex-direction: column-reverse;
+    height: 632px;
+    align-items: space-between;
+  }
+
+  @include a.respond(phone) {
+    width: 375px;
+  }
+
   &::after {
     content: url("../../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
     height: 64rem;
@@ -133,6 +143,18 @@
 
     bottom: 0;
     left: 0;
+
+    @include a.respond(tab-land) {
+      bottom: 110px;
+      left: -130px;
+    }
+
+    @include a.respond(phone) {
+      content: url("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+      height: 292px;
+      width: 292px;
+      bottom: 195px;
+    }
   }
 
   &__textbox {
@@ -141,6 +163,19 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 95px;
+
+    @include a.respond(tab-land) {
+      width: 573px;
+      margin-left: 0;
+      text-align: center;
+      align-items: center;
+      height: 312px;
+    }
+
+    @include a.respond(phone) {
+      width: 327px;
+      height: 395px;
+    }
   }
 
   &__heading {
@@ -149,11 +184,23 @@
 
   &__text {
     width: 45.8rem;
+    @include a.respond(tab-land) {
+      width: 573px;
+    }
+
+    @include a.respond(phone) {
+      width: 327px;
+    }
   }
 
   &__imgbox {
     width: 476px;
     height: 480px;
     z-index: 3;
+    @include a.respond(tab-land) {
+      width: 100%;
+      height: 320px;
+      align-self: flex-start;
+    }
   }
 }

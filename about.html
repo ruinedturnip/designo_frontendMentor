@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="script.js"></script>
     <title>Frontend Mentor | Designo Agency Website Challenge</title>
   </head>
   <body>
@@ -25,30 +26,54 @@ NAV
 
 --------------------------- -->
 
-      <nav class="nav container">
-        <div class="nav__box--left">
-          <a href="index.html">
+<nav class="nav container">
 
-            <img
-            src="/assets/shared/desktop/logo-dark.png"
-            alt="Logo"
-            width="196px"
-            height="24px"
-            />
-          </a>
-        </div>
-        <div class="nav__box--right">
-          <li class="nav__link">
-            <a href="about.html" class="nav__link--item">Our Company</a>
-          </li>
-          <li class="nav__link">
-            <a href="locations.html" class="nav__link--item">Locations</a>
-          </li>
-          <li class="nav__link">
-            <a href="contact.html" class="nav__link--item">Contact</a>
-          </li>
-        </div>
-      </nav>
+  <div class="nav__box--left">
+    <a href="index.html">
+      <img
+        src="/assets/shared/desktop/logo-dark.png"
+        alt="Logo"
+        width="196px"
+        height="24px"
+      />
+    </a>
+  </div>
+
+  <div class="nav__box--right" id="desktopNav">
+    <li class="nav__link">
+      <a href="about.html" class="nav__link--item">Our Company</a>
+    </li>
+    <li class="nav__link">
+      <a href="locations.html" class="nav__link--item">Locations</a>
+    </li>
+    <li class="nav__link">
+      <a href="contact.html" class="nav__link--item">Contact</a>
+    </li>
+  </div>
+
+  <div class="mobile__nav hide" id="mobileNav">
+    <div class="mobile__navBars hide" id="menu-bar">
+      <div class="mobile__navBar navBar--1 "></div>
+      <div class="mobile__navBar navBar--2 "></div>
+      <div class="mobile__navBar navBar--3 "></div>
+    </div>
+   </div>
+   <div class="mobile__nav--overlay hide" id="overlay">
+
+    <div class="mobile__nav--overlay__links">
+      <li class="mobile__nav__link" id="nav-1">
+        <a href="about.html" class="mobile__nav__link--item">Our Company</a>
+      </li>
+      <li class="mobile__nav__link" id="nav-2">
+        <a href="locations.html" class="mobile__nav__link--item">Locations</a>
+      </li>
+      <li class="mobile__nav__link" id="nav-3">
+        <a href="contact.html" class="mobile__nav__link--item">Contact</a>
+      </li>
+    </div>
+  </div>
+
+</nav>
 
       <!-- --------------------------
 
@@ -69,7 +94,7 @@ Header
         <div class="about__hero__imgbox">
           <picture class="about__hero__img">
             <source
-              media="(min-width:1100px)"
+              media="(min-width:1200px)"
               srcset="/assets/about/desktop/image-about-hero.jpg"
               alt="hero image - people at a desk"
             />
@@ -80,7 +105,7 @@ Header
             />
             <source
               media="(max-width:599px)"
-              srcset="/assets/home/desktop/image-about-hero.png"
+              srcset="/assets/about/mobile/image-about-hero.jpg"
               alt="hero image - people at a desk"
             />
             <img src="/assets/about/mobile/image-about-hero.jpg" alt="phone" />
@@ -98,7 +123,7 @@ CONTENT BOX
         <div class="about__content__imgbox">
           <picture class="about__content__img">
             <source
-              media="(min-width:1100px)"
+              media="(min-width:1200px)"
               srcset="/assets/about/desktop/image-world-class-talent.jpg"
               alt="World class talent"
             />
@@ -109,7 +134,7 @@ CONTENT BOX
             />
             <source
               media="(max-width:599px)"
-              srcset="/assets/home/desktop/image-world-class-talent.png"
+              srcset="/assets/about/mobile/image-world-class-talent.jpg"
               alt="World class talent"
             />
             <img
@@ -183,7 +208,7 @@ CONTENT BOX
   <div class="about__content__imgbox">
     <picture class="about__content__img">
       <source
-        media="(min-width:1100px)"
+        media="(min-width:1200px)"
         srcset="/assets/about/desktop/image-real-deal.jpg"
         alt="World class talent"
       />
@@ -194,7 +219,7 @@ CONTENT BOX
       />
       <source
         media="(max-width:599px)"
-        srcset="/assets/home/desktop/image-real-deal.png"
+        srcset="/assets/about/mobile/image-real-deal.jpg"
         alt="World class talent"
       />
       <img

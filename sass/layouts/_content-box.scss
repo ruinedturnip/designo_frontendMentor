@@ -11,12 +11,30 @@
   overflow: hidden;
   position: relative;
 
+  @include a.respond(tab-land) {
+    flex-direction: column;
+    width: 689px;
+    height: 736px;
+  }
+
+  @include a.respond(phone) {
+    width: 375px;
+    height: 865px;
+  }
+
   &--2 {
     flex-direction: row-reverse;
+
+    @include a.respond(tab-land) {
+      flex-direction: column;
+    }
   }
 
   &__imgbox {
     z-index: 5;
+    @include a.respond(tab-land) {
+      height: 320px;
+    }
   }
 
   &__textbox {
@@ -25,9 +43,26 @@
     flex-direction: column;
     width: 44.5rem;
 
+    @include a.respond(tab-land) {
+      width: 572px;
+      margin-left: 0;
+      text-align: center;
+      margin-top: 68px;
+    }
+
+    @include a.respond(phone) {
+      width: 327px;
+    }
+
     &--2 {
       margin-left: 0;
       margin-right: 9.4rem;
+
+      @include a.respond(tab-land) {
+        margin-right: 0;
+        text-align: center;
+        margin-top: 68px;
+      }
     }
   }
 
