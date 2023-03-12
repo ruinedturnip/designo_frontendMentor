@@ -1248,6 +1248,16 @@ html {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 75em) {
+  .map__text-content {
+    width: 540px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .map__text-content {
+    width: 327px;
+  }
+}
 .map__content_row {
   display: flex;
 }

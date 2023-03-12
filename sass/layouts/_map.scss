@@ -109,6 +109,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include a.respond(tab-land) {
+      width: 540px;
+    }
+    @include a.respond(phone) {
+      width: 327px;
+    }
   }
 
   &__content_row {
